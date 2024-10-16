@@ -24,7 +24,6 @@ for profile in wifi_data_to_str:
              password = "No password found" 
              for line in wifi_data_profile_to_str:
                  if "Key Content" in line: password = line.split(":")[1].strip() 
-                 break 
              passwords[profile] = password 
         except subprocess.CalledProcessError: 
             # kama password ikigoma kuchukulika 
